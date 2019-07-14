@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 235 97" style="enable-background:new 0 0 235 97;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-1_1_);}
+	.st1{opacity:0.1046;fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-2_1_);enable-background:new    ;}
+	.st2{opacity:8.282382e-02;fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-3_1_);enable-background:new    ;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Combined-Shape_1_);}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-6_1_);}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_3_);}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#001A3E;}
+</style>
+<title>hub-visual</title>
+<desc>Created with Sketch.</desc>
+<g id="hub-visual">
+	<g id="Group-5" transform="translate(0.000000, 9.000000)">
+		<g id="Group-4" transform="translate(0.000000, 1.000000)">
+			<g id="Group" transform="translate(0.000000, 0.840909)">
+				<g id="lisk-hub">
+					<g id="Group-21-Copy">
+						<g id="Page-1">
+							
+								<linearGradient id="Fill-1_1_" gradientUnits="userSpaceOnUse" x1="-55.798" y1="454.3457" x2="-56.2733" y2="452.5469" gradientTransform="matrix(105.8182 0 0 -77.1591 5974.6392 35047.793)">
+								<stop  offset="0" style="stop-color:#DCFCFF"/>
+								<stop  offset="0.2866" style="stop-color:#FFFFFF"/>
+								<stop  offset="0.4977" style="stop-color:#FAFFFF"/>
+								<stop  offset="1" style="stop-color:#93F4FE"/>
+							</linearGradient>
+							<polygon id="Fill-1" class="st0" points="52.9,0 0,31 0,46.1 52.9,77.2 105.8,46.1 105.8,31 							"/>
+							
+								<linearGradient id="Fill-2_1_" gradientUnits="userSpaceOnUse" x1="-54.5577" y1="449.7312" x2="-55.9251" y2="450.896" gradientTransform="matrix(52.6739 0 0 -46.0166 2998.5588 20782.9961)">
+								<stop  offset="0" style="stop-color:#021755;stop-opacity:0"/>
+								<stop  offset="1" style="stop-color:#0097FF"/>
+							</linearGradient>
+							<polygon id="Fill-2" class="st1" points="53.1,62.3 53.1,77.2 105.8,45.9 105.7,31.1 							"/>
+							
+								<linearGradient id="Fill-3_1_" gradientUnits="userSpaceOnUse" x1="-54.7076" y1="449.5483" x2="-56.292" y2="451.5625" gradientTransform="matrix(53.1442 0 0 -46.0166 2972.2217 20782.9941)">
+								<stop  offset="0" style="stop-color:#021755;stop-opacity:0"/>
+								<stop  offset="1" style="stop-color:#0097FF"/>
+							</linearGradient>
+							<polygon id="Fill-3" class="st2" points="0,46.2 53,77.2 53.1,62.3 0.1,31.1 							"/>
+						</g>
+					</g>
+					
+						<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-54.3771" y1="441.4409" x2="-55.3094" y2="440.5086" gradientTransform="matrix(34.3321 0 0 -21.1717 1916.8617 9378.8398)">
+						<stop  offset="0" style="stop-color:#7192B9"/>
+						<stop  offset="1" style="stop-color:#3A5E89"/>
+					</linearGradient>
+					<path class="st3" d="M50.5,50L20.8,32.4c-1-0.6-2.1-0.6-3.1,0c-0.3,0.1-0.5,0.4-0.6,0.6c-0.2,0.4-0.3,0.8-0.2,1.2
+						c0.1,0.4,0.4,0.8,0.7,1l29.7,17.6c0.5,0.3,1,0.4,1.6,0.4c0.5,0,1-0.1,1.5-0.4c0.3-0.1,0.5-0.4,0.6-0.6c0.2-0.4,0.3-0.8,0.2-1.2
+						C51.1,50.5,50.8,50.2,50.5,50z"/>
+					<g id="Group-3" transform="translate(33.391515, 14.114468)">
+						<g id="Group-2">
+							<g id="sd">
+								<g>
+									
+										<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-88.2072" y1="431.5218" x2="-89.1394" y2="430.5895" gradientTransform="matrix(46.7158 0 0 -27.8159 4165.9932 12004.6299)">
+										<stop  offset="0" style="stop-color:#7192B9"/>
+										<stop  offset="1" style="stop-color:#3A5E89"/>
+									</linearGradient>
+									<path class="st4" d="M41.1,22.6c-3.4,2.6-8.2,4.6-14,5.3c-8.9,1-17.5-0.8-22.5-4.4c-2.3-1.7-3.9-3.8-4.2-6.2
+										c-0.6-4,1.7-8.1,5.8-11.2C9.9,3.3,14.9,1.4,21,0.7c9.1-1.1,17.4,0.5,22.1,4.2c2,1.6,3.3,3.5,3.7,5.8
+										C47.6,14.9,45.5,19.3,41.1,22.6z"/>
+								</g>
+								
+									<linearGradient id="Combined-Shape_1_" gradientUnits="userSpaceOnUse" x1="-86.2646" y1="425.5406" x2="-85.3471" y2="426.4581" gradientTransform="matrix(13.9247 0 0 -20.1921 1234.7552 8616.0801)">
+									<stop  offset="0" style="stop-color:#122037"/>
+									<stop  offset="1" style="stop-color:#243847"/>
+								</linearGradient>
+								<path id="Combined-Shape" class="st5" d="M39,24.1c-0.5-0.3-1-0.6-1.5-1c-2.3-1.7-3.9-3.8-4.2-6.2c-0.6-4,1.7-8.1,5.8-11.2
+									c0.8-0.6,1.7-1.2,2.7-1.7c0.5,0.3,1,0.6,1.4,1c2,1.6,3.3,3.5,3.7,5.8c0.8,4.2-1.4,8.6-5.7,12C40.5,23.2,39.7,23.6,39,24.1z"
+									/>
+							</g>
+							
+								<linearGradient id="Fill-6_1_" gradientUnits="userSpaceOnUse" x1="-85.8405" y1="401.1638" x2="-86.7836" y2="400.2207" gradientTransform="matrix(15.5045 0 0 -8.4891 1365.2405 3420.6621)">
+								<stop  offset="0" style="stop-color:#95D425"/>
+								<stop  offset="1" style="stop-color:#33B200"/>
+							</linearGradient>
+							<polygon id="Fill-6" class="st6" points="30.8,24 20.8,15.6 36.3,15.6 							"/>
+							
+								<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-85.3051" y1="400.3761" x2="-86.3051" y2="399.3761" gradientTransform="matrix(13.954 0 0 -8.3489 1216.214 3346.3745)">
+								<stop  offset="0" style="stop-color:#00EDFF"/>
+								<stop  offset="1" style="stop-color:#008BFF"/>
+							</linearGradient>
+							<path class="st7" d="M24.1,10.3c-1,0.8-2.5,1.4-4.2,1.6c-2.7,0.3-5.2-0.2-6.7-1.3c-0.7-0.5-1.2-1.1-1.3-1.9
+								c-0.2-1.2,0.5-2.4,1.7-3.4c1.1-0.8,2.6-1.4,4.4-1.6c2.7-0.3,5.2,0.2,6.6,1.3c0.6,0.5,1,1.1,1.1,1.7C26,8,25.4,9.3,24.1,10.3z
+								"/>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g id="Group-8" transform="translate(124.000000, 0.000000)">
+			<path id="Combined-Shape-Copy-20" class="st8" d="M5.2,17.1c0,0.1,0.1,0.1,0.1,0.1h7.3c0.1,0,0.1,0.1,0.1,0.1v5.2
+				c0,0.1-0.1,0.1-0.1,0.1H5.2H0.1c-0.1,0-0.1-0.1-0.1-0.1V6c0,0,0-0.1,0-0.1l5-5.8C5.1,0,5.2,0,5.2,0.2V17.1z M20,22.6
+				c0,0.1-0.1,0.1-0.1,0.1h-5c-0.1,0-0.1-0.1-0.1-0.1V12.5c0,0,0-0.1,0-0.1l5-5.8C19.9,6.5,20,6.6,20,6.7V22.6z M46.9,14.6l5.3,7.9
+				c0.1,0.1,0,0.2-0.1,0.2h-5.5c0,0-0.1,0-0.1-0.1l-4.2-6.5c-0.1-0.1-0.2-0.1-0.2,0.1v1v5.3c0,0.1-0.1,0.1-0.1,0.1h-5
+				c-0.1,0-0.1-0.1-0.1-0.1V5.9c0,0,0-0.1,0-0.1l5-5.8C41.9,0,42.1,0,42.1,0.1v12.5c0,0.1,0.2,0.2,0.2,0.1l3.8-6.3
+				c0,0,0.1-0.1,0.1-0.1h5.7C52,6.4,52,6.5,52,6.6l-5.1,7.9C46.9,14.5,46.9,14.6,46.9,14.6z M28.4,23c-3.4,0-5.6-1.2-6.8-3.6
+				c-0.1-0.1,0-0.2,0.1-0.2l4.1-2.1c0.1,0,0.2,0,0.2,0.1c0.4,1.1,1.3,1.6,2.5,1.6c1.3,0,1.5-0.6,1.5-1c0-0.7-0.9-1-2.3-1.3
+				c-2.3-0.6-5.4-1.4-5.4-5.1c0-2.7,1.9-5.4,6.1-5.3c2.9,0,5,1.2,6.2,3.5c0.1,0.1,0,0.2-0.1,0.2l-3.9,1.8c-0.1,0-0.1,0-0.2-0.1
+				c-0.5-0.8-1.1-1.3-1.9-1.3c-0.8,0-1.3,0.3-1.3,0.9c0,0.7,1,1,2.3,1.3c2.3,0.6,5.5,1.3,5.5,5.3S31.7,23,28.4,23z"/>
+			<path id="Hub" class="st8" d="M23.6,35h9.9v43.4h-9.9V61.2H9.9v17.2H0V35h9.9v16.6h13.6V35z M60.6,47.4h9.3v31h-9.3v-2.9
+				c-1.7,2.3-4.8,3.8-8.9,3.8c-6.3,0-11.6-4.5-11.6-12.8v-19h9.3v17.7c0,3.8,2.4,5.6,5.4,5.6c3.4,0,5.8-2,5.8-6.4V47.4z M95.3,46.5
+				c8.1,0,14.8,7.1,14.8,16.4s-6.7,16.4-14.8,16.4c-4.2,0-7.2-1.4-9.2-3.8v2.9h-9.3V35h9.3v15.3C88.1,48,91.1,46.5,95.3,46.5z
+				 M93.4,70.5c4.3,0,7.4-2.9,7.4-7.6s-3.1-7.6-7.4-7.6s-7.4,2.9-7.4,7.6S89.2,70.5,93.4,70.5z"/>
+		</g>
+	</g>
+</g>
+</svg>
