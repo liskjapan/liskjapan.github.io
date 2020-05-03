@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vote</title>
+    <link rel="stylesheet" type="text/css" href="css/lisk_japan.css">
+    <script src="https://js.lisk.io/lisk-elements-2.0.0.min.js"></script>
+    <script type="text/javascript">
+      const client = lisk.APIClient.createMainnetAPIClient();
+      let votes;
+      let offset = 0;
+      
+      /**
+       * デリゲート情報取得
+       */
+      const getDelegates = async() => {
+        try {
+          // ランクの昇順で101人分のデリゲート情報を取得
+          const result = await client.delegates.get({offset: offset, limit: 101,sort: 'rank:asc'});
+          return result.data;
+        } catch (err) {
+          console.log(err);
+          return [];
+        }
+      }
+      
+      /**
+       * vote情報取得
+       */
+      const getVotes = async() => {
+        try {
+          const liskAddress = document.querySelector('#liskAddress').value;
+          const result = await client.votes.get({address: liskAddress, limit: 101});
+          
+          // 取得した結果からLiskアドレスだけの配列を作る
+          let voteAddress = [];
+          result.data.votes.forEach(function(val){
+            voteAddress.push(val.address);
+          });
+          return voteAddress;
+        } catch(err) {
+          console.log(err);
+          return [];
+        }
+      }
+      
+      /**
+       * 表示内容を取得
+       */
+      const getContent = async() => {
+        // デリゲート情報取得
+        const delegates = await getDelegates();
+        
+        // 画面描画
+        let content = "";
+
+        // 取得したデリゲート情報と取得済のvote情報を比較しながらHTML生成
+        delegates.forEach(function(delegate){
+          content += `<div>`;
+          if (votes.indexOf(delegate.account.address) >= 0) {
+            content += `<div style="display:inline-block;"><input type="checkbox" value=${delegate.account.address} checked></div>`;
+          } else {
+            content += `<div style="display:inline-block;"><input type="checkbox" value=${delegate.account.address}></div>`;
+          }
+          content += `<div style="width:20%;display:inline-block;">Rank:${delegate.rank}</div>`;
+          content += `<div style="width:20%;display:inline-block;">${delegate.username}</div>`;
+          content += `<div style="width:55%;display:inline-block;">${delegate.account.address}</div>`;
+          content += `</div>`;
+        });
+        return content;
+      }
+      
+      /**
+       * 検索ボタン処理
+       */
+      const search = async() => {
+        offset = 0;
+        document.querySelector('#contents').innerHTML = '検索中です..';
+        
+        // vote情報取得
+        votes = await getVotes();
+        
+        // 表示内容を取得して出力
+        document.querySelector('#contents').innerHTML = await getContent();
+        document.querySelector('#btn-next').style = "";
+      }
+      
+      /**
+       * さらに読み込むボタン処理
+       */
+      const next = async() => {
+        offset += 101;
+        
+        // 表示内容を取得して出力
+        document.querySelector('#contents').innerHTML += await getContent();
+      }
+    </script>
+  </head>
+  <body style="font-size:1rem;">
+    <div>
+      <input type="text" id="liskAddress" placeholder="Lisk Address" style="width: 200px;"/>
+      <button onclick="search()">検索</button>
+    </div>
+    <div id="contents"></div>
+    <div><button onclick="next()" id="btn-next" style="display:none;">さらに読み込む</button></div>
+  </body>
+</html>

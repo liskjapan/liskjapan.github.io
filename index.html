@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta content="LiskならDappsの開発/構築/展開をJavaScriptで簡単に実現できます。Dappsの世界を変えるブロックチェーン・アプリケーション・プラットフォーム Lisk。Easily with JavaScript" name="description">
+<meta content="lisk blockchain application platform japan javascript sidechain css3 html5 サイドチェーン 独自チェーン ブロックチェーン" name="keywords">
+<meta content="en" property="og:locale">
+<meta content="Lisk Japan" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="https://www.liskjapan.org" property="og:url">
+<meta content="Lisk Japan | Blockchain Application Platform" property="og:title">
+<meta content="LiskならDappsの開発/構築/展開をJavaScriptで簡単に実現できます。Dappsの世界を変えるブロックチェーン・アプリケーション・プラットフォーム Lisk。Easily with JavaScript" property="og:description">
+<meta content="https://www.liskjapan.org/img/twitter_card.png" property="og:image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@LiskJPN" name="twitter:site">
+<meta content="@LiskJPN" name="twitter:creator">
+<meta content="Lisk | Blockchain Application Platform" name="twitter:title">
+<meta content="LiskならDappsの開発/構築/展開をJavaScriptで簡単に実現できます。Dappsの世界を変えるブロックチェーン・アプリケーション・プラットフォーム Lisk。Easily with JavaScript" name="twitter:description">
+<meta content="https://www.liskjapan.org/img/twitter_card.png" name="twitter:image">
+<meta content="#ffffff" name="theme-color">
+<script src="https://js.lisk.io/lisk-elements-2.0.0.min.js"></script>
+<script src="https://kit.fontawesome.com/42ff0f83cc.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/headerbutton.js"></script>
+<script type="text/javascript" src="js/sdk_demo.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script> 
+<title>Lisk Japan | Blockchain Application Platform</title>
+<link rel="alternate" href="http://www.liskjapan.org" hreflang="ja" />
+<link href="https://getbootstrap.com/docs/4.3/examples/carousel/" rel="canonical">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#ffffff"/>
+<link href="https://www.liskjapan.org" rel="canonical">
+<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/lisk_japan.css">
+</head>
+<body class="text-secondary line-height body-text">
+
+
+<!-------Header Start-------><script type="text/javascript">header();</script>
+
+
+<!-------BG Dark Start-------><div class="lisk-bg-dark pt-3 pb-3">
+  <!-------Container Start-------><div class="lisk-container pt-3 pb-3">
+    <div class="row p-3">
+      <div class="col-lg-6 d-flex align-items-center justify-content-center">
+        <div>
+          <div class="lisk-news-center pb-5"><span class="lisk-news mb-2">News<span class="text-gray pl-2 pr-2 font-weight-normal">Huobiにてステーキングサービス開始</span><a href="https://coinpost.jp/?p=148115" class="text-white">Read <i class="fas fa-external-link-alt"></i></a></span></div>
+        <div class="text-white font-weight-bold display-4 lisk-font-bold letter-space lisk-text-center">Join the Lisk ecosystem</div>
+                <div class="lisk-text-center text-white line-height2 pt-2"><span class="text-gray lisk-font-top">Liskのエコシステムは、開発者ツール、暗号通貨ウォレット、そして活気のあるコミュニティを通じて、ブロックチェーンテクノロジーの恩恵を受けるすべての人に機会を提供します。</span>
+                  <script type="text/javascript">headerbutton();</script>
+                </div>
+              </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center justify-content-center">
+        <div class="lisk-wil-padding-right"><img src="img/Crew.png" width="100%"></div>
+      </div>
+    </div>
+  <!-------Container End-------></div>
+  <!-------BG Dark End-------></div>
+
+
+<!-------Container Start-------><div class="container">
+
+
+  <!-------Section 1 Lead Start-------><div class="row mb-5 mt-5 pt-4">
+    <div class="col-md-12">
+      <div class="col-md-12 p-0 text-dark font-weight-bold text-center display-4 lisk-font-bold-large-title">Your Gateway into Blockchain</div>
+    </div>
+  <!-------Section 1 Lead End------></div>
+
+
+<!-------Section 1 Start-------><div class="row mb-3 p-3 pt-5 mt-2">
+        <div class="col-md-12">
+              <div class="col-md-12 h4 p-0 text-dark font-weight-bold">Lisk SDKの開発スケジュール変更について</div><hr>
+              <p>2020年2月11日にLisk SDK（ソフトウェア開発キット）の開発スケジュール変更が発表されました。</p>
+              <p>以前までは想定されていた各SDKのバージョン毎にAlphanet, Betanet, Testnet までテストを行い、その後Hard-forkと共にMainnetリリースと言う開発スケジュールでしたが、変更後のスケジュールではNetwork Longevity（想定バージョン5.0.0）迄はBetanetリリースで開発を切り上げ、次のバージョン開発へ移行します。
+              これによりHard-forkを1回で完了する事が可能になり、デリゲートや取引所等へ負担・コストを削減し効率よく開発を行うことが可能となります。</p>
+              現在はv3.0.0がBetanetへのリリースを完了し、v4.0.0がAlpha Test、v5.0.0を開発中となります。
+              このv4.0.0では動的料金のみが実装予定となっていましたが、開発が順調に進んでいることもあり、本来であれば次のバージョンとして開発される予定だった新DPoSも合わせて現在開発が行われました。
+              v4.0.0がBetanetへリリースされるとv5.0.0の開発が本格的に始まりますが、v5.0.0がBetanetへリリースされると既にBetanetまでリリースが完了しているSDKv3, v4, v5を纏めてTestnetでテストを行います。ここで問題なければHard-forkを行いMainnetへリリースされ、同時にSDK StageのAlphaが完了します。
+              SDK StageのAlphaが完了すると、最後のBlockchain Interoperabilityの開発に入り、ここでサイドチェーンが実装される事になります。 
+              <br><a class="btn btn-bg-blue mt-3 mr-3" href="https://lisk.io/roadmap" role="button">Protocol Roadmap <i class="fas fa-external-link-alt"></i></a>
+              <a class="btn btn-bg-gray mt-3" href="https://github.com/LiskHQ/lisk-sdk/projects" role="button">Lisk SDK on GitHub <i class="fas fa-external-link-alt"></i></a>
+        </div>
+<!-------Section 1 End-------></div>
+
+
+
+<!-------Section 2 Start-------><div class="row p-3 pt-5 mt-5">
+  <div class="col-md-12">
+  <div class="col-md-12 p-0 h4 text-dark font-weight-bold">Lisk SDKの実装内容と説明</div><hr>
+  Lisk SDKの各バージョンでの実装内容と説明となります。「Lisk SDKの開発スケジュール変更について」で先述した通り、v3.0.0およびV4.0.0はBeta Test完了で一旦保留し、次のv5.0.0がBeta Test完了後からはv3・v4・v5をまとめてTestnetでテストし、問題なければ最終的にMainnetへリリースされます。
+  <div class="lisk-sdk-stage"></div>
+  </div>
+  <div class="col-md-6 pt-3 pl-3 pr-3">
+    <div class="lisk-stage">SDK Stage : <span class="lisk-font-green">Alpha</span></div>
+    <div class="col-md-12 h5 pl-0 pr-0 mb-3 text-dark font-weight-bold"><i class="fab fa-github"></i> Lisk SDK v3.0.0 - <span class="lisk-font-green lisk-font-green-sdk">Beta Test Finished</span></div>
+    <span class="">Development progress</span>
+    <div class="progress mb-3 mt-1" style="height: 20px;">
+      <div class="progress-bar lisk-bg-green" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:100%;">100%</div>
+    </div>
+
+    <span class="">Test phase completed</span>
+    <div class="row mb-3 pl-3 pr-3 mt-1 lisk-progress-font">
+      <div class="col text-center lisk-progres text-light rounded-left">Alpha</div>
+      <div class="col text-center lisk-progres text-light">Beta</div>
+      <div class="col text-center lisk-progres-dark" style="border-right: 1px solid #999999;">Test</div>
+      <div class="col text-center lisk-progres-dark rounded-right">Main</div>
+    </div>
+
+
+    <div class="accordion mt-4" id="accordion1">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#v3jissou" aria-expanded="false" aria-controls="collapseOne">
+              <i class="fas fa-chevron-down pr-3"></i> Release goals
+            </button>
+          </h5>
+        </div>
+    
+        <div id="v3jissou" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+          <div class="card-body">
+            <span class="text-dark">セキュリティと信頼性</span><br>
+            ・BFTコンセンサスプロトコルの導入<br>
+            ・堅牢なピア選択と禁止メカニズムの導入<br>
+            　　禁止メカニズム<br>
+            　　遅延プッシュ機構<br>
+            ・異なるチェーンでのトランザクションリプレイを軽減する<br>
+            ・トランザクションオブジェクトから冗長なプロパティを削除する
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#v3gaiyou" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fas fa-chevron-down pr-3"></i> Detail
+            </button>
+          </h5>
+        </div>
+        <div id="v3gaiyou" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+          <div class="card-body">
+            このバージョンの主な目的は、BFT（Byzantine Fault Tolerance）の実装となります。
+            BFTが実装される事により、今までLiskでは実装されていなかったファイナリティが導入される事になります。
+            BFTが実装されていない現在は、Liskネットワークに参加している全ノード（約300ノード/ノードとはメインネット上でのトランザクションを同期しているマシンの事）の50%以上を信頼する方式を採用していますが、LiskHQが運用するノードも含め前述の通り300近くのノードが存在する為、これらの50%を掌握することはほぼ不可能です。
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-md-6 pt-3 pl-3 pr-3">
+  <div class="width768"></div>
+  <div class="lisk-stage">SDK Stage : <span class="lisk-font-green">Alpha</span></div>
+  <div class="col-md-12 h5 pl-0 pr-0 mb-3 text-dark font-weight-bold"><i class="fab fa-github"></i> Lisk SDK v4.0.0 - <span class="lisk-font-green lisk-font-green-sdk">Beta Test Now</span></div>
+  <span class="">Development progress</span>
+  <div class="progress mb-3 mt-1" style="height: 20px;">
+    <div class="progress-bar lisk-bg-green" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:100%;">100%</div>
+  </div>
+
+  <span class="">Test phase completed</span>
+  <div class="row mb-3 pl-3 pr-3 mt-1 lisk-progress-font">
+    <div class="col text-center lisk-progres text-light rounded-left">Alpha</div>
+    <div class="col text-center lisk-bg-green text-light">Beta</div>
+    <div class="col text-center lisk-progres-dark lisk-progress-line">Test</div>
+    <div class="col text-center lisk-progres-dark rounded-right">Main</div>
+  </div>
+
+
+  <div class="accordion mt-4" id="accordion2">
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#v4jissou" aria-expanded="false" aria-controls="collapseThree">
+            <i class="fas fa-chevron-down pr-3"></i> Release goals
+          </button>
+        </h5>
+      </div>
+  
+      <div id="v4jissou" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+        <div class="card-body">
+          <span class="text-dark">ネットワーク経済学</span><br>
+・バイトベースのブロックサイズ制限への変更<br>
+・トランザクションを順番に適用してブロックの有効性を確立する<br>
+・静的料金システムを動的料金システムに置き換える<br>
+・動的料金システムの料金見積もりアルゴリズムを実装する<br>
+・アカウントの最小残高要件を導入する<br>
+・マルチ署名アカウントをより柔軟にし、スパムを防ぎ、署名の可変性を防ぐ<br>
+・タイムスタンプの代わりにノンスを使用して、トランザクションの無効化を有効にする<br><br>
+<span class="text-dark">ネットワークコンセンサス</span><br>
+・デリゲートリストの均一な順序付け<br>
+・投票ロック期間と新しい投票の重みの定義を導入する<br>
+・Randaoベースのスキームを使用してスタンバイデリゲートを追加し、デリゲートリストを並べ替える<br>
+・BFT違反を罰する<br>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#v4gaiyou" aria-expanded="false" aria-controls="collapseFour">
+            <i class="fas fa-chevron-down pr-3"></i> Detail
+          </button>
+        </h5>
+      </div>
+      <div id="v4gaiyou" class="collapse" aria-labelledby="headingFour" data-parent="#accordion2">
+        <div class="card-body">
+          このバージョンの主な目的は「動的料金」と「新DPoSにおける投票システム」の実装となります。<br><br>
+          動的料金とは手数料の非固定化を意味し、価格などの状況に応じてトランザクションにおける最低手数料を変化させ、適切な手数料を維持させようという仕組みとなります。
+          例えば現在の送金手数料は0.1LSKですが、0.1LSKで固定されていると価格が高騰した際の手数料が非常に高くなってしまうというデメリットがあります。
+          手数料が0.1LSKで固定されていると、1LSK/10,000円になった場合0.05LSK（500円）の送金でも送金手数料に1,000円かかる計算になり、適切な送金手数料を維持する事ができません。
+          但し、手数料の低下は当然セキュリティとトレードオフとなり、言い換えると1250LSKを持つ悪意のあるユーザーが約100万のトランザクションをブロードキャストして、100万の新しいアカウントを作成できることを意味します(現在24万アカウント)。
+          その為、新規アカウントに最小残高である0.05LSKを設定し、この金額以上の残高が無いと送金できないようになっています。<br><br>
+          
+          投票システムの変更とは、今まで投票者が1つのアドレスから最高101人まで投票できた投票システムを、今後は最大で10人、且つ、投票する際に自分が保有しているLSKを最低でも10LSKをデリゲートへのdelegate weightとして投票し、投票したLSKは投票解除（unvote）後5時間30分経過するまでロックされるというシステムとなります。
+          またデリゲートは保有LSKのうち最低10%を自身に投票する必要があります。そして「デリゲートの自己投票*10」と「他者からの総投票LSK+デリゲートの自己投票LSK」を比較し少ない方がdelegate weightとして採用されます。この際にデリゲートが恩恵を受けるdelegate weightは<br><br>
+          <span class="font-weight-bold">delegate weight = minimum { 10 * delegate self-vote , sum of all votes for the delegate }</span><br><br>
+          で表す事ができます。例えばデリゲート立候補者Aの自己投票が250LSK、そのデリゲート立候補者Aへ投票された総LSKが3,000LSKの場合、以下の計算となります。<br><br>
+          
+          <span class="font-weight-bold">例）<br>
+            Delegate has 250 LSK self-votes and 3000 LSK other votes:<br>
+            delegate weight = 2500 LSK = min {2500 LSK, 3250 LSK}</span><br><br>
+            
+            つまり、デリゲート立候補者Aへ沢山の投票があったとしても、自己投票LSKが少ないとデリゲート立候補者Aのdelegate weightは低いものとなり、結果的にデリゲート立候補者Aが当選する確率は低くなります。
+            当選確率を上げる為には自己投票LSKを増やす必要があり、また自己投票したLSKは最低でも30日間（26,000Block）はロックされます。
+            以上の事からわかる様に、この新しい投票システムが実装されるとLSKを大量に保有しているデリゲートは、自分が保有しているLSKを安易に売却できなくなります。
+            また、投票者も保有しているLSKを売却してしまうと還元報酬が減ってしまいます（還元報酬は投票した量に比例する為）。これらの理由から売り圧は減る事が予想され、結果的にLiskのエコシステムを維持する為のユーティリティートークン（LSK）の価値を高める事が可能となります。
+            さらに2020年9月には最後の報酬減期が訪れ、デリゲート報酬はそれ以降1LSK固定となってしまう為、市場に出回るLSKが少なくなる事も価値を高める要因の1つです。LSKの価値を高め、デリゲートへの報酬単価を上げる事は質の高いエコシステムを維持する為に必要不可欠です。
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-------Section 2 End-------></div>
+
+
+<!-------Section 2 Start-------><div class="row p-3">
+  <div class="col-md-6 pt-3 pl-3 pr-3">
+    <div class="lisk-stage">SDK Stage : <span class="lisk-font-green">Alpha</span></div>
+    <div class="col-md-12 h5 pl-0 mb-3 text-dark font-weight-bold"><i class="fab fa-github"></i> Lisk SDK v5.0.0
+  </div>
+
+    <span class="">Development progress</span>
+    <div class="progress mb-3 mt-1" style="height: 20px;">
+      <div class="progress-bar lisk-bg-green" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%;">25%</div>
+    </div>
+
+    <span class="">Test phase completed</span>
+    <div class="row mb-3 pl-3 pr-3 mt-1 lisk-progress-font">
+      <div class="col text-center lisk-progres-dark lisk-progress-line rounded-left">Alpha</div>
+      <div class="col text-center lisk-progres-dark lisk-progress-line">Beta</div>
+      <div class="col text-center lisk-progres-dark lisk-progress-line">Test</div>
+      <div class="col text-center lisk-progres-dark rounded-right">Main</div>
+    </div>
+
+
+    <div class="accordion mt-4" id="accordion3">
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#v5jissou" aria-expanded="false" aria-controls="collapseFive">
+              <i class="fas fa-chevron-down pr-3"></i> Release goals
+            </button>
+          </h5>
+        </div>
+    
+        <div id="v5jissou" class="collapse" aria-labelledby="headingFive" data-parent="#accordion3">
+          <div class="card-body">
+            <span class="text-dark">ネットワークの永続</span><br>
+            ・トランザクションIDシステムを置き換える<br>
+            ・認証されたデータ構造の導入<br>
+            ・ブロックおよびトランザクション署名の事前ハッシュを削除する<br>
+            ・ユニバーサルシリアル化メソッドを導入する<br>
+            ・分散型再ジェネシスの導入<br>
+            ・アドレスシステムを交換する<br>
+            ・ブロックIDシステムを交換する
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#v5gaiyou" aria-expanded="false" aria-controls="collapseSix">
+              <i class="fas fa-chevron-down pr-3"></i> Detail
+            </button>
+          </h5>
+        </div>
+        <div id="v5gaiyou" class="collapse" aria-labelledby="headingSix" data-parent="#accordion3">
+          <div class="card-body">
+            このバージョンの大きな目的はLisk ID（アドレス）、Block ID、Transaction IDの変更となり、主に「ハッキング防止強化」「チェックサムの実装」「衝突耐性の強化」の実装となりますが、ここではLisk ID(アドレス)に特化した説明を行います。
+            アドレス形式は公開キーのSHA-256ハッシュの160bitと、BIP173で提案されたBCHコードによって生成された30bitのチェックサムを使用します。具体的には現在の「16293716040102736949L」と言ったアドレスから、先頭に「lsk」を付けた合計41文字のアドレス「lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu」への変更となります。
+            現在のIDシステムの利点はアドレスが短く分かりやすい事ですが、<br><br>
+            
+            <span class="font-weight-bold">・パスフレーズとアドレスの関係が n:1 のため、衝突耐性が低く公開鍵を紐づける必要がある。<br><br>
+            ・エラー検出システムが実装されていない為、間違いに気づかず1文字でも間違えて送金してしまうと別のアカウントへ送金されてしまうこと（アドレスを間違えて送金した場合、取り戻す手段はない）</span><br><br>
+            
+            といった欠点がありましたが、これら欠点を改善することでセキュリティレベルを向上させます。<br>
+            チェックサムはBCHコードを実装しているためエラー検出が可能となり、このバージョンが実装されると今後はアドレスを打ち間違えた際に警告が出されるされるようになったりします。
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="col-md-6 pt-3 pl-3 pr-3">
+  <div class="width768"></div>
+  <div class="lisk-stage">SDK Stage : <span class="lisk-font-green">Beta</span></div>
+  <div class="col-md-12 h5 pl-0 mb-3 text-dark font-weight-bold"><i class="fab fa-github"></i> Lisk SDK v6.0.0</div>
+  <span class="">Development progress</span>
+  <div class="progress mb-3 mt-1" style="height: 20px;">
+    <div class="progress-bar lisk-bg-green text-gray role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:0%;">0%</div>
+  </div>
+
+  <span class="">Test phase completed</span>
+  <div class="row mb-3 pl-3 pr-3 mt-1 lisk-progress-font">
+    <div class="col text-center lisk-progres-dark lisk-progress-line rounded-left">Alpha</div>
+    <div class="col text-center lisk-progres-dark lisk-progress-line">Beta</div>
+    <div class="col text-center lisk-progres-dark lisk-progress-line">Test</div>
+    <div class="col text-center lisk-progres-dark rounded-right">Main</div>
+  </div>
+
+
+  <div class="accordion mt-4" id="accordion4">
+    <div class="card">
+      <div class="card-header" id="headingSeven">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#v6jissou" aria-expanded="false" aria-controls="collapseSeven">
+            <i class="fas fa-chevron-down pr-3"></i> Release goals
+          </button>
+        </h5>
+      </div>
+  
+      <div id="v6jissou" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion4">
+        <div class="card-body">
+          <span class="text-dark">ブロックチェーンの相互運用</span><br>
+          ・ブロックチェーン間でのトークン転送<br>
+          ・ブロックチェーン間での通信確立 
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingEight">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-dark collapsed" type="button" data-toggle="collapse" data-target="#v6gaiyou" aria-expanded="false" aria-controls="collapseEight">
+            <i class="fas fa-chevron-down pr-3"></i> Detail
+          </button>
+        </h5>
+      </div>
+      <div id="v6gaiyou" class="collapse" aria-labelledby="headingEight" data-parent="#accordion4">
+        <div class="card-body">
+          このバージョンの大きな目的はサイドチェーンを実装し、メインチェーンとサイドチェーン間での通信、およびトークンの転送となります。これが実装されメインチェーンにリリースされる事でBeta SDK（プロトコルロードマップ）が完了します。
+          その後はRC SDKステージへ移行し全体のクリーンアップ作業を行い、それが完了するとProduction SDKとなり完成となる予定です。
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<!-------Section 2 End-------></div>
+
+
+<!-------Section 2 Start-------><div class="row p-3">
+  <div class="col-md-6 pt-3 pl-3 pr-3">
+    <div class="lisk-stage">SDK Stage : <span class="lisk-font-green">RC</span></div>
+    <div class="col-md-12 h5 pl-0 mb-3 text-dark font-weight-bold"><i class="fab fa-github"></i> Final quality assurance phase
+  </div>
+
+    <span class="">Development progress</span>
+    <div class="progress mb-3 mt-1" style="height: 20px;">
+      <div class="progress-bar lisk-bg-green text-gray" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:0%;">0%</div>
+    </div>
+
+    <span class="">Test phase completed</span>
+    <div class="row mb-3 pl-3 pr-3 mt-1 lisk-progress-font">
+      <div class="col text-center lisk-progres-dark lisk-progress-line rounded-left">Alpha</div>
+      <div class="col text-center lisk-progres-dark lisk-progress-line">Beta</div>
+      <div class="col text-center lisk-progres-dark lisk-progress-line">Test</div>
+      <div class="col text-center lisk-progres-dark rounded-right">Main</div>
+    </div>
+</div>
+
+
+<div class="col-md-6 pt-3 pl-3 pr-3">
+  <div class="width768-2"></div>
+  <div class="lisk-stage">SDK Stage : <span class="lisk-font-green">Prodution</span></div>
+  <div class="col-md-12 h5 pl-0 mb-3 text-dark font-weight-bold"><i class="fab fa-github"></i> Lisk SDK completed</div>
+  <span class="">Development progress</span>
+  <div class="progress mb-3 mt-1" style="height: 20px;">
+    <div class="progress-bar lisk-bg-green text-gray role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:0%;">0%</div>
+  </div>
+
+  <span class="">Test phase completed</span>
+  <div class="row mb-3 pl-3 pr-3 mt-1 lisk-progress-font">
+    <div class="col text-center lisk-progres-dark lisk-progress-line rounded-left">Alpha</div>
+    <div class="col text-center lisk-progres-dark lisk-progress-line">Beta</div>
+    <div class="col text-center lisk-progres-dark lisk-progress-line">Test</div>
+    <div class="col text-center lisk-progres-dark rounded-right">Main</div>
+  </div>
+</div>
+<!-------Section 2 End-------></div>
+
+
+<!-------SDK DEMO Start-------><script type="text/javascript">sdk_demo();</script>
+
+<!-------Section 2 Start-------><div class="row mb-3 p-3 pt-5">
+  <div class="col-md-12">
+    <div class="col-md-12 h4 p-0 text-dark font-weight-bold">取引所(Cold Wallet)での報酬受取額</div><hr>
+    現在ステーキングサービスを行っている取引所「Coincheck」「Binance」での報酬受取額の確認と、各アドレスが投票しているデリゲートの確認。<br><br>
+  </div>
+  <div class="col-md-6 p-3">
+    <div><span>Coincheck Cold Wallet:<br>
+    <span id="targetID" class="font-weight-bold" style="font-size: 1.1rem;">16293716040102736949L</span></span> <button id="btnCopy" class="lisk-copy"><i class="far fa-copy"></i><span style="font-size: 9px;"> Copy!</span></button></div>
+    <script>document.querySelector('#btnCopy').addEventListener("click", () => {
+      const element = document.querySelector('#targetID'),
+        selection = window.getSelection(),
+        range = document.createRange();
+      range.selectNodeContents(element);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      //console.log('選択された文字列: ', selection.toString());
+      const succeeded = document.execCommand('copy');
+      if (succeeded) {
+          alert('Coincheck Cold Walletのアドレスをコピーしました');
+      } else {
+          alert('コピーが失敗しました');
+      }
+      selection.removeAllRanges();
+    });</script>
+    <a class="btn btn-bg-blue mt-3 mr-3" href="https://explorer.lisk.io/address/16293716040102736949L" role="button" target="_blank">Transaction <i class="fas fa-external-link-alt"></i></a>
+    <a class="btn btn-bg-gray mt-3 mr-3" href="https://explorer.lisk.io/address/16293716040102736949L?page=1&senderId=16610350189578358339L&recipientId=16293716040102736949L" role="button" target="_blank">Elite rewards <i class="fas fa-external-link-alt"></i></a>
+    <br><br>
+    
+    <div><span>Binance Cold Wallet:<br>
+    <span id="targetID2" class="font-weight-bold" style="font-size: 1.1rem;">3645487307206542645L</span></span> <button id="btnCopy2" class="lisk-copy"><i class="far fa-copy"></i><span style="font-size: 9px;"> Copy!</span></button></div>
+    <script>document.querySelector('#btnCopy2').addEventListener("click", () => {
+      const element = document.querySelector('#targetID2'),
+        selection = window.getSelection(),
+        range = document.createRange();
+      range.selectNodeContents(element);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      //console.log('選択された文字列: ', selection.toString());
+      const succeeded = document.execCommand('copy');
+      if (succeeded) {
+          alert('Binance Cold Walletのアドレスをコピーしました');
+      } else {
+          alert('コピーが失敗しました');
+      }
+      selection.removeAllRanges();
+    });</script>
+    <a class="btn btn-bg-blue mt-3 mr-3" href="https://explorer.lisk.io/address/3645487307206542645L" role="button" target="_blank">Transaction <i class="fas fa-external-link-alt"></i></a>
+    <a class="btn btn-bg-gray mt-3 mr-3" href="https://explorer.lisk.io/address/3645487307206542645L?page=1&senderId=16610350189578358339L&recipientId=3645487307206542645L" role="button" target="_blank">Elite rewards <i class="fas fa-external-link-alt"></i></a>
+</div>
+<div class="col-md-6 p-3 lisk-rewards">
+    <iframe src="custom.html" width="100%" height="350" frameborder="0">
+      この部分はインラインフレームを使用しています。
+      </iframe>
+</div>
+<!-------Section 2 End-------></div>
+
+
+<!-------Section 3 Start-------><div class="row lisk-pb-twitter pl-3 pr-3">
+  <div class="col-md-12">
+    <div class="width990"></div>
+    <div class="col-md-12 h4 p-0 text-dark font-weight-bold">Lisk関連Twitterアカウント</div><hr>
+    Lisk公式やSidechainプロジェクトのアカウント。Lisk Magazine、Lisk Highlightsでは幅広い情報を取り扱っています。<br><br>
+  </div>
+  <div class="col-md-4 pb-3">
+    <div class="bg-white rounded">
+      <div class="pl-3 pt-3 pr-3 pb-2 rounded-top lisk-bg-dark-twitter" style="width:100%;">
+        <div class="float-left pr-2">
+      <img class="Avatar rounded-pill" src="https://pbs.twimg.com/profile_images/1189844389113270272/bZihIuER_bigger.png" width="55px">
+      </div>
+      <div class="pt-1 pb-1">
+      <div class="font-weight-bold text-gray-light">Lisk</div>
+      <div class="lisk-twitter-text pb-2">@LiskHQ</div>
+      </div></div>
+      <a class="twitter-timeline" data-height="400" data-chrome="noheader nofooter" href="https://twitter.com/LiskHQ">Tweets by liskholder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
+
+  <div class="col-md-4 pb-3">
+    <div class="bg-white rounded">
+      <div class="pl-3 pt-3 pr-3 pb-2 rounded-top lisk-bg-dark-twitter" style="width:100%;">
+        <div class="float-left pr-2">
+    <img class="Avatar rounded-pill" src="https://pbs.twimg.com/profile_images/944608208722780160/e76zueMv_bigger.jpg" width="55px">
+    </div>
+    <div class="pt-1 pb-1">
+    <div class="font-weight-bold text-gray-light">Lisk Magazine</div>
+    <div class="lisk-twitter-text pb-2">@liskmagazine</div>
+    </div></div>
+    <a class="twitter-timeline" data-height="400" data-chrome="noheader nofooter" href="https://twitter.com/liskmagazine">Tweets by liskholder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+
+<div class="col-md-4 pb-3">
+  <div class="bg-white rounded">
+    <div class="pl-3 pt-3 pr-3 pb-2 rounded-top lisk-bg-dark-twitter" style="width:100%;">
+      <div class="float-left pr-2">
+    <img class="Avatar rounded-pill" src="https://pbs.twimg.com/profile_images/1035983672560824321/eBmJzS64_bigger.jpg" width="55px">
+    </div>
+    <div class="pt-1 pb-1">
+    <div class="font-weight-bold text-gray-light">LISK Highlights</div>
+    <div class="lisk-twitter-text pb-2">@HighlightsLisk</div>
+    </div></div>
+    <a class="twitter-timeline" data-height="400" data-chrome="noheader nofooter" href="https://twitter.com/HighlightsLisk">Tweets by liskholder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+<!-------Section 3 End-------></div>
+
+
+<!-------Section 3 Start-------><div class="row lisk-pb-twitter pl-3 pr-3">
+  <div class="col-md-4 pb-3">
+    <div class="bg-white rounded">
+      <div class="pl-3 pt-3 pr-3 pb-2 rounded-top lisk-bg-dark-twitter" style="width:100%;">
+        <div class="float-left pr-2">
+      <img class="Avatar rounded-pill" src="https://pbs.twimg.com/profile_images/1221452881267765248/8A2vPmnH_200x200.jpg" width="55px">
+      </div>
+      <div class="pt-1 pb-1">
+      <span class="lisk-twitter mb-2">Lisk Sidechain Project</span>
+      <div class="font-weight-bold text-gray-light">Leasehold</div>
+      <div class="lisk-twitter-text pb-2">@LeaseholdHQ</div>
+      </div></div>
+      <a class="twitter-timeline" data-height="400" data-chrome="noheader nofooter" href="https://twitter.com/korben32">Tweets by liskholder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  </div>
+
+  <div class="col-md-4 pb-3">
+    <div class="bg-white rounded">
+      <div class="pl-3 pt-3 pr-3 pb-2 rounded-top lisk-bg-dark-twitter" style="width:100%;">
+        <div class="float-left pr-2">
+    <img class="Avatar rounded-pill" src="https://pbs.twimg.com/profile_images/1238422326380814338/OxigH-Bq_200x200.jpg" width="55px">
+    </div>
+    <div class="pt-1 pb-1">
+    <span class="lisk-twitter mb-2">Lisk Sidechain Project</span>
+    <div class="font-weight-bold text-gray-light">MADANA</div>
+    <div class="lisk-twitter-text pb-2">@MADANA_HQ</div>
+    </div></div>
+    <a class="twitter-timeline" data-height="400" data-chrome="noheader nofooter" href="https://twitter.com/MADANA_HQ">Tweets by liskholder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+
+<div class="col-md-4 pb-3">
+  <div class="bg-white rounded">
+    <div class="pl-3 pt-3 pr-3 pb-2 rounded-top lisk-bg-dark-twitter" style="width:100%;">
+      <div class="float-left pr-2">
+    <img class="Avatar rounded-pill" src="https://pbs.twimg.com/profile_images/1051218283196833793/Djxjb5Zp_bigger.jpg" width="55px">
+    </div>
+    <div class="pt-1 pb-1">
+    <span class="lisk-twitter mb-2">Lisk Sidechain Project</span>
+    <div class="font-weight-bold text-gray-light">GNY</div>
+    <div class="lisk-twitter-text pb-2">@GnyHighlights</div>
+    </div></div>
+    <a class="twitter-timeline" data-height="400" data-chrome="noheader nofooter" href="https://twitter.com/GnyHighlights">Tweets by liskholder</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+<!-------Section 3 End-------></div>
+
+
+<!-------Container End-------></div>
+
+
+<br><br>
+
+
+<!-------Footer-------><script type="text/javascript">footer();</script>
+
+
+<!-------Google Analytics-------><script async src="https://www.googletagmanager.com/gtag/js?id=UA-142687483-1 …"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-142687483-1');
+</script>
+
+</body>
+</html>

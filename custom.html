@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<meta content="LiskならDappsの開発/構築/展開をJavaScriptで簡単に実現できます。Dappsの世界を変えるブロックチェーン・アプリケーション・プラットフォーム Lisk。Easily with JavaScript" name="description">
+<meta content="lisk blockchain application platform japan javascript sidechain css3 html5 サイドチェーン 独自チェーン ブロックチェーン" name="keywords">
+<meta content="en" property="og:locale">
+<meta content="Lisk Japan" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="https://www.liskjapan.org" property="og:url">
+<meta content="Lisk Japan | Blockchain Application Platform" property="og:title">
+<meta content="LiskならDappsの開発/構築/展開をJavaScriptで簡単に実現できます。Dappsの世界を変えるブロックチェーン・アプリケーション・プラットフォーム Lisk。Easily with JavaScript" property="og:description">
+<meta content="https://www.liskjapan.org/img/twitter_card.png" property="og:image">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@LiskJPN" name="twitter:site">
+<meta content="@LiskJPN" name="twitter:creator">
+<meta content="Lisk | Blockchain Application Platform" name="twitter:title">
+<meta content="LiskならDappsの開発/構築/展開をJavaScriptで簡単に実現できます。Dappsの世界を変えるブロックチェーン・アプリケーション・プラットフォーム Lisk。Easily with JavaScript" name="twitter:description">
+<meta content="https://www.liskjapan.org/img/twitter_card.png" name="twitter:image">
+<meta content="#ffffff" name="theme-color">
+<script src="https://js.lisk.io/lisk-elements-2.0.0.min.js"></script>
+<script src="https://kit.fontawesome.com/42ff0f83cc.js"></script>
+<script src="js/jquery-3.3.1.slim.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/headerbutton.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script> 
+<title>Vote</title>
+<link rel="alternate" href="http://www.liskjapan.org" hreflang="ja" />
+<link href="https://getbootstrap.com/docs/4.3/examples/carousel/" rel="canonical">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#ffffff"/>
+<link href="https://www.liskjapan.org" rel="canonical">
+<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/lisk_japan.css">
+    <script type="text/javascript">
+      const client = lisk.APIClient.createMainnetAPIClient();
+      let votes;
+      let offset = 0;
+      
+      /**
+       * デリゲート情報取得
+       */
+      const getDelegates = async() => {
+        try {
+          // ランクの昇順で101人分のデリゲート情報を取得
+          const result = await client.delegates.get({offset: offset, limit: 101,sort: 'rank:asc'});
+          return result.data;
+        } catch (err) {
+          console.log(err);
+          return [];
+        }
+      }
+      
+      /**
+       * vote情報取得
+       */
+      const getVotes = async() => {
+        try {
+          const liskAddress = document.querySelector('#liskAddress').value;
+          const result = await client.votes.get({address: liskAddress, limit: 101});
+          
+          // 取得した結果からLiskアドレスだけの配列を作る
+          let voteAddress = [];
+          result.data.votes.forEach(function(val){
+            voteAddress.push(val.address);
+          });
+          return voteAddress;
+        } catch(err) {
+          console.log(err);
+          return [];
+        }
+      }
+      
+      /**
+       * 表示内容を取得
+       */
+      const getContent = async() => {
+        // デリゲート情報取得
+        const delegates = await getDelegates();
+        
+        // 画面描画
+        let content = "";
+
+        // 取得したデリゲート情報と取得済のvote情報を比較しながらHTML生成
+        delegates.forEach(function(delegate){
+          if (votes.indexOf(delegate.account.address) >= 0) {
+          content += `<div class="lisk-rank-wrapper-on">`;
+          content += `<div class="lisk-font-normal lisk-rank-text"><div class="lisk-font-bold lisk-rank-number">${delegate.rank}</div></div>`;
+          content += `<div class="lisk-delegate-wrapper"><span class="lisk-delegate-on">${delegate.username}</span></div>`;
+          content += `<div class="lisk-address-text">Address: <span class="lisk-address-number">${delegate.account.address}</span></div>`;
+          content += `</div>`;
+          content += `<div class="lisk-border"></div>`;
+          } else {
+          content += `<div class="lisk-rank-wrapper-off">`;
+          content += `<div class="lisk-font-normal lisk-rank-text"><div class="lisk-font-bold lisk-rank-number">${delegate.rank}</div></div>`;
+          content += `<div class="lisk-delegate-wrapper"><span class="lisk-delegate-off">${delegate.username}</span></div>`;
+          content += `<div class="lisk-address-text">Address: <span class="lisk-address-number">${delegate.account.address}</span></div>`;
+          content += `</div>`;
+          content += `<div class="lisk-border"></div>`;
+          }
+        });
+        return content;
+      }
+      
+      /**
+       * 検索ボタン処理
+       */
+      const search = async() => {
+        offset = 0;
+        document.querySelector('#contents').innerHTML = 'Searching...';
+        
+        // vote情報取得
+        votes = await getVotes();
+        
+        // 表示内容を取得して出力
+        document.querySelector('#contents').innerHTML = await getContent();
+        document.querySelector('#btn-next').style = "";
+      }
+      
+      /**
+       * さらに読み込むボタン処理
+       */
+      const next = async() => {
+        offset += 101;
+        
+        // 表示内容を取得して出力
+        document.querySelector('#contents').innerHTML += await getContent();
+      }
+    </script>
+    <style>
+    body{margin:0;font-size: 90%; background-color: #f7f9fb;}
+    .lisk-font-bold-list{font-family:Gilroy-ExtraBold;}
+    .lisk-font-normal{font-family:OpenSans-Regular;font-size:0.8em;}
+    .lisk-button{background-color:#343a40;border:4px solid #343a40;border-radius:3px;padding:6px 10px;color:#fff;font-family:OpenSans-Regular;font-size:0.8em;}
+    .lisk-copy{border: 0px solid #b1b1b1;border-radius: 3px;padding: 4px 15px;color: #6c757d;background-color: #f7f9fb;}
+    .lisk-form{padding:9px;border-radius:3px;background-color:#fff;border:1px solid #d0d0d0;font-size: 0.82rem;}
+    .lisk-border{border-bottom:1px solid #ddd;}
+	  .lisk-delegate-wrapper{width:190px;display:inline-block;}
+    .lisk-delegate-on{padding:5px 10px;border-radius:3px;background-color:#c7ffec;color:#009688;font-size:0.8em;letter-spacing:0.05em;display:inline-block;font-family:OpenSans-Regular;font-weight: 700;}
+    .lisk-delegate-off{padding:5px 10px;border-radius:3px;background-color:#eee;color:#777;font-size:0.8em;letter-spacing:0.05em;display:inline-block;font-family:OpenSans-Regular;font-weight: 700;}
+	  .lisk-rank-wrapper-on{padding:15px 15px 10px 15px;}
+	  .lisk-rank-wrapper-off{padding:15px 15px 10px 15px;background-color:#ccc;}
+	  .lisk-rank-checkbox{display:inline-block;}
+	  .lisk-rank-text{vertical-align:middle;width:50px;display:inline-block;text-align:center;padding:0 115px 0 10px;;color:#4c4c4c;}
+	  .lisk-rank-number{left:10px;font-size:2em;letter-spacing:0.05em;color:#000;}
+	  .lisk-address-text{display:inline-block;padding-left:0px;}
+  	.lisk-address-number{font-family:OpenSans-Regular;font-weight: 700;}
+    </style>
+</head>
+  <body style="color: #6c757d !important;">
+    <div style="float:left;padding: 0px 20px 10px 0px;">
+      <input class="lisk-form" type="text" id="liskAddress" placeholder="Lisk Address" style="width:200px;"/>
+    </div>
+    <div style="padding: 0px 20px 12px 0px;">
+      <button class="lisk-button lisk-font-bold-list" onclick="search()">Search</button>
+    </div>
+    アドレスを入力すると、そのアドレスが投票しているデリゲートが表示されます。LSK保有残高Topアカウントのアドレスは下記リンクを参照してください。<br>
+    <a class="btn btn-bg-blue mt-3 mr-3 mb-3" href="https://explorer.lisk.io/topAccounts" role="button" target="_blank">Lisk Top Accounts <i class="fas fa-external-link-alt"></i></a>
+    <div style="clear: both;"></div>
+    <div id="contents"></div>
+    <div style="padding:20px 20px 20px 0px;">
+      <button class="lisk-button lisk-font-bold-list" onclick="next()" id="btn-next" style="display:none;">more</button>
+    </div>
+    <div style="height:10px"></div>
+  </body>
+</html>
