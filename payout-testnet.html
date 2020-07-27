@@ -25,7 +25,7 @@
 			function getPending() {
 				document.querySelector("#pending-area").innerHTML = "";
 				document.querySelector("#history-area").innerHTML = "";
-				fetch(`https://testnet01.liskjapan.org/payout?address=${document.querySelector("#address").value}`)
+				fetch(`https://test01.liskjapan.org/payout?address=${document.querySelector("#address").value}`)
 				.then(function(response) {
 					return response.json();
 				})
