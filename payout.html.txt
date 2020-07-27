@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>sample</title>
+		<style>
+			html {
+				font-size: 10px;
+			}
+			body {
+				font-size: 1.8rem;
+			}
+			input {
+				padding: 10px;
+				font-size: 1.8rem;
+			}
+			button {
+				padding: 5px 10px;
+				font-size: 1.8rem;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function getPending() {
+				document.querySelector("#pending-area").innerHTML = "";
+				document.querySelector("#history-area").innerHTML = "";
+				fetch(`https://test01.liskjapan.org/payout?address=${document.querySelector("#address")}`)
+				.then(function(response) {
+					return response.json();
+				})
+				.then(function(j) {
+					if (j.result) {
+						document.querySelector("#pending-area").innerHTML = `${j.pending} LSK`;
+						
+						let history = "";
+						for (h of j.history) {
+							history += `${h.amount} LSK (${h.payoutDate.toLocaleString()}) <a href="https://testnet-explorer.lisk.io/tx/${h.id}" target="_">Explorer</a><br />`;
+						}
+						document.querySelector("#history-area").innerHTML = history;
+					} else {
+						alert("failed");
+					}
+				});
+			}
+		</script>
+		<div>
+			<input type="text" name="address" id="address" style="width:300px;" placeholder="enter your address" />
+			<button onclick="getPending()">Šm”F</button>
+		</div>
+		<br />
+		<div>pending</div>
+		<hr>
+		<div id="pending-area"></div>
+		<br />
+		<div>history</div>
+		<hr>
+		<div id="history-area"></div>
+	<body>
+</html>
