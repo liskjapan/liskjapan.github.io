@@ -25,7 +25,7 @@
 			function getPending() {
 				document.querySelector("#pending-area").innerHTML = "";
 				document.querySelector("#history-area").innerHTML = "";
-				fetch(`https://test01.liskjapan.org/payout?address=${document.querySelector("#address").value}`)
+				fetch(`https://main01.liskjapan.org/payout?address=${document.querySelector("#address").value}`)
 				.then(function(response) {
 					return response.json();
 				})
@@ -35,7 +35,7 @@
 						
 						let history = "";
 						for (h of j.history) {
-							history += `${h.amount} LSK (${h.payoutDate.toLocaleString()}) <a href="https://testnet-explorer.lisk.io/tx/${h.id}" target="_">Explorer</a><br />`;
+							history += `${h.amount} LSK (${h.payoutDate.toLocaleString()}) <a href="https://explorer.lisk.io/tx/${h.id}" target="_">Explorer</a><br />`;
 						}
 						document.querySelector("#history-area").innerHTML = history;
 					} else {
