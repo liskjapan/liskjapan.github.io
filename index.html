@@ -421,6 +421,48 @@
 
 <!-------SDK DEMO Start-------><script type="text/javascript">sdk_demo();</script>
 
+<!-------Section 1 Start-------><div class="row mb-3 p-3 pt-5">
+  <div class="col-md-12">
+    <div class="col-md-12 h4 p-0 text-dark font-weight-bold">LiskJapanからの報酬受取額</div><hr>
+    LiskJapanからの報酬受取額を確認できます。報酬はアクティブデリゲート（101位以内へランクイン）にならない限り発生しません。<br><br>
+  </div>
+  		<script>
+			function getPending() {
+				document.querySelector("#pending-area").innerHTML = "";
+				document.querySelector("#history-area").innerHTML = "";
+				fetch(`https://main01.liskjapan.org/payout?address=${document.querySelector("#address").value}`)
+				.then(function(response) {
+					return response.json();
+				})
+				.then(function(j) {
+					if (j.result) {
+						document.querySelector("#pending-area").innerHTML = `${j.pending} LSK`;
+						
+						let history = "";
+						for (h of j.history) {
+							history += `${h.amount} LSK (${h.payoutDate.toLocaleString()}) <a href="https://explorer.lisk.io/tx/${h.id}" target="_">Explorer</a><br />`;
+						}
+						document.querySelector("#history-area").innerHTML = history;
+					} else {
+						alert("failed");
+					}
+				});
+			}
+		</script>
+		<div>
+			<input type="text" name="address" id="address" style="width:300px;" placeholder="enter your address" />
+			<button onclick="getPending()" style="background-color: #4070f4;border-radius: 4px;padding: 9px 30px;border: none;color: #fff;font-size: 1em;">報酬受取額の確認</button>
+		</div>
+		<br />
+		<div>pending</div>
+		<hr>
+		<div id="pending-area"></div>
+		<br />
+		<div>history</div>
+		<hr>
+		<div id="history-area"></div>
+<!-------Section 1 End-------></div>
+  
 <!-------Section 2 Start-------><div class="row mb-3 p-3 pt-5">
   <div class="col-md-12">
     <div class="col-md-12 h4 p-0 text-dark font-weight-bold">取引所(Cold Wallet)での報酬受取額</div><hr>
