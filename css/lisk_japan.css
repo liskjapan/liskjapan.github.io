@@ -39,7 +39,7 @@ body{font-size: 96%; background-color: #f7f9fb;}
 .lisk-bg-dark{background-color: #0C152E;position: relative;top: 78px;margin-bottom: 115px;}
 .lisk-bg-dark-twitter{background-color: #0C152E;}
 .lisk-bg-green{background-color: #2BD67B;}
-.lisk-bg-none{background-color: #b5b5b5;}
+.lisk-bg-gray{background-color: #b5b5b5;}
 .lisk-bg-blue{background-color: #03a9f4;}
 .lisk-font-green{color: #2BD67B;}
 .lisk-font-green-sdk{color: #009646;font-weight: 600;font-size: 0.8rem;}
