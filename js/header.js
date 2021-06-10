@@ -7,7 +7,7 @@ function header(){
     html += '<ul class="navbar-nav mx-auto">';
     html += '<li class="nav-item active pt-1 pl-4 h6"><a class="nav-link ml-3" href="index.html">TOP</a></li>';
     html += '<li class="nav-item active pt-1 pl-4 h6"><a class="nav-link ml-3" href="poc-liskbike.html">概念実証</a></li>';
-    html += '<li class="nav-item active pt-1 pl-4 h6"><a class="nav-link ml-3" href="what-is-lisk.html">Liskとは?</a></li>';
+    html += '<li class="nav-item active pt-1 pl-4 h6"><a class="nav-link ml-3" href="what-is-lisk.html?ref=01&btn=02" onclick="gtag('event', 'click', {'event_category': 'link','event_label': 'what-is-lisk.html?ref=01&btn=02','value': '1'});">Liskとは?</a></li>';
     html += '<li class="nav-item active pt-1 pl-4 pr-5 h6"><a class="nav-link ml-3" href="enterprise.html">企業での活用</a></li>';
     html += '</ul>';
     html += '</div>';
