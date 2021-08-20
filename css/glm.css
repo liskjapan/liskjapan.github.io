@@ -246,9 +246,9 @@ a.nav-link{color: #999999!important}
 @media (min-width: 768px) {
   .flex-container {height: 99.9vh;}
   .lsk-lineheight{line-height: 1.5em;}
-  .lsk-catchphrase-1{font-size: 2.5em;letter-spacing: -0.1em;color: #3e527d; opacity: 0.6; font-size: 290%;}
-  .lsk-catchphrase-2{font-size: 3.5em;letter-spacing: -0.1em;color: #8d8d8d; opacity: 0.6; font-size: 530%;}
-  .lsk-catchphrase-3{font-size: 4.5em;letter-spacing: -0.1em;color: #f8f8f8; opacity: 0.6; font-size: 700%; line-height: 120px;}
+  .lsk-catchphrase-1{font-size: 2.5em;letter-spacing: -0.1em;color: #3e527d; opacity: 0.6; font-size: 230%;}
+  .lsk-catchphrase-2{font-size: 3.5em;letter-spacing: -0.1em;color: #8d8d8d; opacity: 0.6; font-size: 410%;}
+  .lsk-catchphrase-3{font-size: 4.5em;letter-spacing: -0.1em;color: #f8f8f8; opacity: 0.6; font-size: 650%; line-height: 120px;}
   .lsk-bodycopy{font-size: 1.5em;}
   .lsk-margin-top{margin-top: 30px;}
     .glm-bg-top{margin-top:75px;}
